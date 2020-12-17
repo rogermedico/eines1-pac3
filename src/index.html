@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="Web development library.">
+  <meta name="author" content="Roger Medico Piqué">
+  <title>Arya Web Development Library</title>
+  <link rel="stylesheet" href="./assets/styles/main.scss">
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <header class="header container">
+    <h1 class="header--title">
+      <a class="header--link" href="index.html">
+        <img class="header--logo" src="assets/images/logo.png" alt="webpage logo">
+        <span class="sr">Go back to home page</span>
+      </a>
+      <span class="header--title--text">Arya Web Development Library</span><span
+        class="header--title--initials">AWDL</span>
+    </h1>
+    <div class="header--menu">
+      <a class="header--link" href="#">
+        <i class="header--menu--icon far fa-user" aria-hidden="true" title="Login"></i>
+        <span class="sr">Login</span>
+      </a>
+    </div>
+  </header>
+  <main class="container home--main">
+    <h2 class="home--main--subtitle animated-title">Free online books</h2>
+    <p>Huge collection of books related to main pillars of web development. The collection includes books about HTML,
+      CSS, JavaScript, Backend technologies and development Frameworks. </p>
+    <p>This site is made using the public API from the <a class="link" href="https://openlibra.com">OpenLibra</a>
+      project. The idea behind OpenLibra is to try and bring together in one place, most of the quality
+      bibliographic resources, with a special interest in those written in the Spanish language.</p>
+    <div class="home--main--content" id="home-content"></div>
+    <div class="loader" id="loader">
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer--content">
+      <div class="footer--content--left">
+        <p class="footer--content--left--title">
+          Arya Web Development Library
+        </p>
+        <p class="footer--content--left--subtitle">
+          Your free library on internet
+        </p>
+        <div class="footer--content--left--social">
+          <a class="footer--content--left--social--link" href="#">
+            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+            <span class="sr">Facebook</span>
+          </a>
+          <a class="footer--content--left--social--link" href="#">
+            <i class="fab fa-twitter-square" aria-hidden="true"></i>
+            <span class="sr">Twitter</span>
+          </a>
+          <a class="footer--content--left--social--link" href="#">
+            <i class="fab fa-instagram-square" aria-hidden="true"></i>
+            <span class="sr">Instagram</span>
+          </a>
+          <a class="footer--content--left--social--link" href="#">
+            <i class="fab fa-youtube-square" aria-hidden="true"></i>
+            <span class="sr">Youtube</span>
+          </a>
+          <a class="footer--content--left--social--link" href="#">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span class="sr">Email</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer--content--right">
+        <div id="footer-links"></div>
+      </div>
+      <div class="footer--content--center">
+        <img class="footer--content--center--image" src="assets/images/books.jpg" alt="">
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/scripts/index.js"></script>
+</body>
+
+</html>

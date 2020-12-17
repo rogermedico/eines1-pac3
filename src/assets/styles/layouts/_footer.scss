@@ -1,0 +1,135 @@
+/*
+ * Footer
+ */
+
+.footer {
+  background-color: $background-color-secondary;
+}
+
+.footer--content {
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+
+  @media (min-width: $small) {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.footer--content--left {
+  margin-bottom: 2rem;
+
+  @media (min-width: $small) {
+    flex: 0 0 50%;
+    // margin-left: 100px;
+  }
+
+  @media (min-width: $medium) {
+    flex: 0 0 33%;
+    // margin-left: 100px;
+  }
+}
+
+.footer--content--left--title {
+  margin-bottom: .5rem;
+  font-family: $font-family-serif;
+  // @media (min-width: $small) {
+  //   text-align:right;
+  //   margin-right: 0;
+  //   margin-left: auto;
+  // }
+}
+
+.footer--content--left--subtitle {
+  margin-bottom: .5rem;
+  font-size: .9rem;
+  color: $text-color-secondary;
+  // @media (min-width: $small) {
+  //   text-align:right;
+  //   margin-right: 0;
+  //   margin-left: auto;
+  // }
+}
+
+.footer--content--left--social {
+  font-size: 2rem;
+  color: $text-color-secondary;
+  // @media (min-width: $small) {
+  //   text-align:right;
+  //   margin-right: 0;
+  //   margin-left: auto;
+  // }
+}
+
+.footer--content--left--social--link {
+  color: $text-color-secondary;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-2;
+    text-decoration: none;
+  }
+}
+
+.footer--content--center {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $small) {
+    display: none;
+  }
+
+  @media (min-width: $medium) {
+    display: inherit;
+    order: 1;
+    flex: 0 0 33%;
+  }
+}
+
+.footer--content--center--image {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  clip-path: polygon(50% 0%, 100% 15%, 95% 15%, 95% 100%, 60% 100%, 60% 75%, 55% 67%, 50% 65%, 50% 65%, 45% 67%, 40% 75%, 40% 100%, 5% 100%, 5% 15%, 0% 15%);
+}
+
+.footer--content--right {
+  margin-left: auto;
+  margin-bottom: 2rem;
+
+  @media (min-width: $small) {
+    flex: 1 0 50%;
+  }
+
+  @media (min-width: $medium) {
+    order: 2;
+    flex: 0 0 33%;
+  }
+}
+
+.footer--right--link-container {
+  display: inline;
+  margin-right: 5px;
+  font-size: .9rem;
+
+  @media (min-width: $extra-small) {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+
+  @media (min-width: $small) {
+    margin-left: 150px;
+    margin-right: 100px;
+    display: block;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  @media (min-width: $medium) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}

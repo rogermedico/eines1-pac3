@@ -1,0 +1,43 @@
+{
+  "name": "eines1-pac3",
+  "version": "1.0.0",
+  "description": "Sample book store with fetch data.",
+  "main": "src/assets/scripts/index.js",
+  "scripts": {
+    "parcel:dev": "parcel src/*.html -p 8123 --open",
+    "parcel:build": "parcel build src/*.html --public-url ./ --out-dir dist --no-source-maps --no-cache",
+    "clean": "rimraf dist .cache .cache-loader",
+    "stylelint": "stylelint src/**/*.scss",
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean stylelint parcel:build"
+  },
+  "keywords": [],
+  "author": "Roger Medico Piqué",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogermedico/eines1-pac3.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "autoprefixer": "^9.8.6",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-imagemin": "^4.0.2",
+    "postcss": "^8.1.10",
+    "postcss-clean": "^1.1.0",
+    "postcss-modules": "^3.2.2",
+    "postcss-preset-env": "^6.7.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.29.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.18.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "core-js": "^3.8.0",
+    "whatwg-fetch": "^3.5.0"
+  }
+}

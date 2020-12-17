@@ -1,0 +1,35 @@
+/**
+ * Variables file
+ */
+
+/* Tell fontawesome where his files are located */
+$fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts';
+
+/* Define media queries breackpoints */
+$extra-small: 576px;
+$small: 768px;
+$medium: 992px;
+$large: 1200px;
+
+/* Define colors */
+$background-color: #fff;
+$background-color-secondary: rgba(51, 100, 138, .1);
+$text-color: #232323;
+$text-color-secondary: #747474;
+$text-color-inverse: #fff;
+$color: #2f4858;
+$color-2: #33658a;
+$color-3: #f6ae2d;
+$color-4: rgba(246, 176, 45, .7);
+$box-shadow: rgba(0, 0, 0, .2);
+$box-shadow-hover: rgba(246, 176, 45, .7);
+
+/* Define fonts */
+$font-family-sans-serif: 'Roboto', arial, helvetica, sans-serif;
+$font-family-serif: 'Roboto Slab', georgia, times, serif;
+
+/* Define background images */
+$background-img-xs: '../images/bg-xs.png';
+$background-img-sm: '../images/bg-sm.png';
+$background-img-md: '../images/bg-md.png';
+$background-img-lg: '../images/bg-lg.png';

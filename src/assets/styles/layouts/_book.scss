@@ -1,0 +1,225 @@
+/*
+ * Books page
+ */
+
+.book--main {
+  padding-bottom: 3rem;
+}
+
+.book--main--subtitle {
+  font-size: 2rem;
+  font-family: $font-family-serif;
+  color: $color;
+  border-bottom: 1px solid $color;
+}
+
+.book--main--content {
+  margin-top: 2rem;
+
+  @media (min-width: $small) {
+    display: flex;
+  }
+}
+
+.book--main--content--cover {
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  @media (min-width: $small) {
+    flex: 30%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: $medium) {
+    flex: 50%;
+  }
+}
+
+.book--main--content--cover--img {
+  height: auto;
+  width: 100%;
+  max-width: 326px;
+  min-width: 250px;
+
+  @media (min-width: $small) {
+    min-width: initial;
+    width: initial;
+  }
+}
+
+.book--main--content--info {
+  margin-right: 35px;
+  margin-left: 35px;
+
+  @media (min-width: $small) {
+    flex: 70%;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  @media (min-width: $medium) {
+    flex: 50%;
+    margin-left: 0;
+  }
+}
+
+.book--main--content--info--detail {
+  margin-bottom: .7rem;
+  font-size: 1.1rem;
+
+  @media (min-width: $extra-small) {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.book--main--content--info--detail--legend {
+  margin-bottom: .2rem;
+  font-weight: 700;
+
+  @media (min-width: $extra-small) {
+    flex: 25%;
+  }
+
+  @media (min-width: $small) {
+    flex: 30%;
+  }
+
+  @media (min-width: $medium) {
+    flex: 25%;
+  }
+
+  @media (min-width: $large) {
+    flex: 20%;
+  }
+}
+
+.book--main--content--info--detail--value {
+  @media (min-width: $extra-small) {
+    flex: 75%;
+  }
+
+  @media (min-width: $small) {
+    flex: 70%;
+  }
+
+  @media (min-width: $medium) {
+    flex: 75%;
+  }
+
+  @media (min-width: $large) {
+    flex: 80%;
+  }
+}
+
+.book--main--content--info--download {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.book--main--content--info--download--link {
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  color: $text-color-inverse;
+  background-color: $color-2;
+  text-decoration: none;
+  transition: background-color .5s ease-out, box-shadow .5s ease-out;
+
+  @media (min-width: $small) {
+    font-size: 1.7rem;
+  }
+
+  @media (min-width: $large) {
+    font-size: 2rem;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 8px 0 $box-shadow-hover, 0 6px 20px 0 $box-shadow-hover;
+    background-color: $color-3;
+  }
+}
+
+.book--main--content--info--download--icon {
+  margin-right: .5rem;
+}
+
+.book--related {
+  margin-top: 2rem;
+}
+
+.book--related--subtitle {
+  font-size: 2rem;
+  font-family: $font-family-serif;
+  color: $color;
+  border-bottom: 1px solid $color;
+}
+
+.book--related--container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.book--related-2 {
+  display: none;
+
+  @media (min-width: $small) {
+    display: initial;
+  }
+}
+
+.book--related-3 {
+  display: none;
+
+  @media (min-width: $medium) {
+    display: initial;
+  }
+}
+
+.book--related--container--link {
+  flex: 25%;
+  color: $color;
+  text-decoration: none;
+  margin: 1rem 0;
+
+  &:hover {
+    color: $color;
+    text-decoration: none;
+  }
+}
+
+.book--related--container--figure {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  text-align: center;
+  background-color: $background-color;
+  box-shadow: 0 4px 8px 0 $box-shadow, 0 6px 20px 0 $box-shadow;
+  transition: box-shadow .5s ease-out;
+  margin-bottom: 25px;
+  height: 100%;
+
+  &:hover {
+    box-shadow: 0 4px 8px 0 $box-shadow-hover, 0 6px 20px 0 $box-shadow-hover;
+  }
+}
+
+.book--related--container--figure--img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  max-height: 350px;
+}
+
+.book--related--container--figure--figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  padding: 10px 20px;
+  max-width: 260px;
+}

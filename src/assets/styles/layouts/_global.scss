@@ -1,0 +1,95 @@
+/*
+ * Global classes
+ */
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  background-image: url($background-img-xs);
+  background-repeat: no-repeat;
+  background-size: 100% 230px;
+  background-position: top;
+  font-family: $font-family-sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+
+  @media (min-width: $small) { background-image: url($background-img-sm); }
+
+  @media (min-width: $medium) { background-image: url($background-img-md); }
+
+  @media (min-width: $large) { background-image: url($background-img-lg); }
+}
+
+/* Container for diferent elements */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 92%;
+
+  @media (min-width: $extra-small) {
+    max-width: 540px;
+  }
+
+  @media (min-width: $small) {
+    max-width: 720px;
+  }
+
+  @media (min-width: $medium) {
+    max-width: 960px;
+  }
+
+  @media (min-width: $large) {
+    max-width: 1140px;
+  }
+}
+
+/* screen reader */
+.sr {
+  display: none;
+}
+
+/* default link */
+.link {
+  color: $color;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-2;
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin-bottom: .5rem;
+}
+
+/* animation for titles */
+.animated-title {
+  display: inline-block;
+  animation: animated-titles .8s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+@keyframes animated-titles {
+  0% {
+    letter-spacing: -.5em;
+    transform: translateZ(-800px) scale(.5);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateZ(0) scale(1.5);
+    filter: blur(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

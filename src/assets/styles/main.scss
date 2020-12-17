@@ -1,0 +1,28 @@
+/**
+ * Import variables
+ */
+
+@import 'variables';
+@import 'fonts';
+
+/**
+ * Import npm dependencies
+ */
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+
+/**
+ * Import layouts
+ * It's a best practice to use a partial for each page
+ */
+
+@import 'layouts/global';
+@import 'layouts/loader';
+@import 'layouts/header';
+@import 'layouts/home';
+@import 'layouts/category';
+@import 'layouts/book';
+@import 'layouts/footer';
