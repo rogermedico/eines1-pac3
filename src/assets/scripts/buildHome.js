@@ -49,7 +49,8 @@ export function buildHome(data){
       img.setAttribute('srcset', `${books[book].thumbnail} 130w, ${books[book].cover} 320w`);
       img.setAttribute('sizes', '(max-width: 768px) 140px, 330px');
       img.setAttribute('src', books[book].cover);
-			img.setAttribute('alt', `${books[book].title} cover`);
+      img.setAttribute('alt', `${books[book].title} cover`);
+      img.setAttribute('loading', 'lazy');
 			fig.appendChild(img); 
 
 			/* figcaption */
