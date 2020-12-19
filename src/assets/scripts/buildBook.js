@@ -266,6 +266,7 @@ function relatedBooks(data,bookTopics){
     img.setAttribute('sizes', '(max-width: 768px) 140px, 330px');
     img.setAttribute('src', relatedBook.cover);
     img.setAttribute('alt', `${relatedBook.title} cover`);
+    img.setAttribute('loading', 'lazy');
     fig.appendChild(img); 
 
     /* figcaption */

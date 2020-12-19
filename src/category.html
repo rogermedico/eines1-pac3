@@ -8,9 +8,9 @@
   <meta name="description" content="Web development library.">
   <meta name="author" content="Roger Medico Piqué">
   <title>Arya Web Development Library</title>
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-  <link rel="stylesheet" href="./assets/styles/main.scss">
-  <link rel="stylesheet" href="./assets/styles/category.scss">
+  <link rel="preload" as="style" href="./assets/styles/main.scss" onload="this.rel='stylesheet'">
+  <link rel="preload" as="style" href="./assets/styles/category.scss" onload="this.rel='stylesheet'">
+  <link rel="preload" as="style" href="./assets/fontello/css/fontello.css" onload="this.rel='stylesheet'">
   <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
 </head>
 
@@ -26,7 +26,7 @@
     </h1>
     <div class="header--menu">
       <a class="header--link" href="#">
-        <i class="header--menu--icon far fa-user" aria-hidden="true" title="Login"></i>
+        <i class="header--menu--icon icon-user" aria-hidden="true" title="Login"></i>
         <span class="sr">Login</span>
       </a>
     </div>
@@ -59,23 +59,23 @@
         </p>
         <div class="footer--content--left--social">
           <a class="footer--content--left--social--link" href="#">
-            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+            <i class="icon-facebook-square" aria-hidden="true"></i>
             <span class="sr">Facebook</span>
           </a>
           <a class="footer--content--left--social--link" href="#">
-            <i class="fab fa-twitter-square" aria-hidden="true"></i>
+            <i class="icon-twitter-square" aria-hidden="true"></i>
             <span class="sr">Twitter</span>
           </a>
           <a class="footer--content--left--social--link" href="#">
-            <i class="fab fa-instagram-square" aria-hidden="true"></i>
+            <i class="icon-instagram-square" aria-hidden="true"></i>
             <span class="sr">Instagram</span>
           </a>
           <a class="footer--content--left--social--link" href="#">
-            <i class="fab fa-youtube-square" aria-hidden="true"></i>
+            <i class="icon-youtube-square" aria-hidden="true"></i>
             <span class="sr">Youtube</span>
           </a>
           <a class="footer--content--left--social--link" href="#">
-            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <i class="icon-envelope" aria-hidden="true"></i>
             <span class="sr">Email</span>
           </a>
         </div>

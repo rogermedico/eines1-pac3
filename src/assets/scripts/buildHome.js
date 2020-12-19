@@ -50,7 +50,7 @@ export function buildHome(data){
       img.setAttribute('sizes', '(max-width: 768px) 140px, 330px');
       img.setAttribute('src', books[book].cover);
       img.setAttribute('alt', `${books[book].title} cover`);
-      // img.setAttribute('loading', 'lazy');
+      img.setAttribute('loading', 'lazy');
 			fig.appendChild(img); 
 
 			/* figcaption */
