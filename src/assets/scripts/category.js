@@ -1,9 +1,9 @@
 /* Common polyfills to support old browsers */
-import 'core-js/stable';
-import 'regenerator-runtime/runtime';
+// import 'core-js/stable';
+// import 'regenerator-runtime/runtime';
 
 /* Polyfill to support fetch */
-import 'whatwg-fetch';
+// import 'whatwg-fetch';
 
 import { getData } from './getData';
 import { buildCategory } from './buildCategory';
